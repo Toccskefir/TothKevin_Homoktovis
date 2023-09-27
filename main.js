@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
+import './style.css';
 
 document.addEventListener("DOMContentLoaded", init);
 
@@ -9,10 +10,10 @@ let clicked3;
 let clicked4;
 
 function init(){
-    document.getElementById("img1").addEventListener("click", imgclicked(1));
-    document.getElementById("img2").addEventListener("click", imgclicked(2));
-    document.getElementById("img3").addEventListener("click", imgclicked(3));
-    document.getElementById("img4").addEventListener("click", imgclicked(4));
+    document.getElementById("img1").addEventListener("click", () => { imgclicked(1) });
+    document.getElementById("img2").addEventListener("click", () => { imgclicked(2) });
+    document.getElementById("img3").addEventListener("click", () => { imgclicked(3) });
+    document.getElementById("img4").addEventListener("click", () => { imgclicked(4) });
     clicked1 = 0;
     clicked2 = 0;
     clicked3 = 0;
