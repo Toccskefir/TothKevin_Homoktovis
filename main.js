@@ -18,6 +18,8 @@ function init(){
     clicked2 = 0;
     clicked3 = 0;
     clicked4 = 0;
+
+    document.getElementById("submitColor").addEventListener("click", changeColor);
 }
 
 function imgclicked(id) {
@@ -39,4 +41,9 @@ function imgclicked(id) {
             document.getElementById("figcap4").textContent = `Kattintások száma: ${clicked4}`;
             break;
     }
+}
+
+function changeColor() {
+    let color = document.getElementById("color").value;
+    document.getElementById("title").style.backgroundColor = color;
 }
